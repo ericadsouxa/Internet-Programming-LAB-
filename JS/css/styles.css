@@ -1,0 +1,77 @@
+
+:root{
+  --primary-color: #3F72AF;
+  --secondary-color: #F0F4FB;
+  --tertiary-color: #112D4E;
+}
+
+#home {
+  height: 100%;
+  color: white;
+  width: 100%;
+  padding: 0 10%;
+  background-image: linear-gradient(
+    rgba(0, 149, 255, 0.736),
+      rgb(0, 46, 99)
+      
+      ),
+      url("../content/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.primary-section{
+  background-color: var(--primary-color);
+}
+.secondary-section{
+  background-color: var(--secondary-color) !important;
+}
+.primary-section-heading{
+  color: var(--secondary-color);
+}
+.secondary-section-heading{
+  color: var(--primary-color);
+}
+h2{
+  text-align: center;
+}
+h2:after {
+  content: "";
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 50px;
+  background-color: var(--tertiary-color);
+  margin: 5px auto;
+}
+
+.home-btn {
+  color: var(--tertiary-color) !important;
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
+}
+.home-btn:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 5px 2px rgb(0 0 0 / 50%);
+}
+
+/* Form */
+.form-signin {
+  width: 100%;
+  max-width: 700px;
+  max-height: 900px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 80px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
